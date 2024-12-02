@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" 
+    rel="stylesheet">
+
+
+    <title>Color Scheme Picker</title>
+
+</head>
+<body>
+    <div class="main-container">
+        <section class="selection-section">
+            <input type="color" class="picked-theme" id="theme-color-input">
+            <select name="schemes" id="color-scheme-selector">
+                <option value="monochrome">
+                    Monochrome
+                </option>
+                <option value="monochrome-dark">
+                    Monochrome-dark
+                </option>
+                <option value="monochrome-light">
+                    Monochrome-light
+                </option>
+                <option value="analogic">
+                    Analogic
+                </option>
+                <option value="complement">
+                    Complement
+                </option>
+                <option value="analogic-complement">
+                    Analogic-complement
+                </option>
+                <option value="triad">
+                    Triad
+                </option>
+            </select>
+            <button id="color-scheme-btn">Get Color Scheme</button>
+        </section>
+        <section class="color-container">
+            <input type="color" name="1" id="first-color-container">
+            <input type="color" name="2" id="second-color-container">
+            <input type="color" name="3" id="third-color-container">
+            <input type="color" name="4" id="fourth-color-container">
+            <input type="color" name="5" id="fifth-color-container">
+            <p class="color-code" id="first-color-code">#000000</p>
+            <p class="color-code" id="second-color-code">#000000</p>
+            <p class="color-code" id="third-color-code">#000000</p>
+            <p class="color-code" id="fourth-color-code">#000000</p>
+            <p class="color-code" id="fifth-color-code">#000000</p>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+</body>
+</html>
